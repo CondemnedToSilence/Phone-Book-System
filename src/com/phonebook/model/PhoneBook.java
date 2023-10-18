@@ -18,12 +18,12 @@ public class PhoneBook {
 	public void searchContact(String a) {
 		boolean flag = true;
 		for(Contact c:Contacts) {
-				if(c.getName() == a) {
+				if(c.getName().equals(a)) {
 					System.out.println(c.getName() + " " + c.getPhoneNumber() + " " + c.getAddress() + " " + c.getContacttype());
 					flag = false;
 				}
 		}
-		if(!flag) {
+		if(flag) {
 			System.out.println("No Contact Found");
 		}
 	}
@@ -33,7 +33,7 @@ public class PhoneBook {
 		boolean flag = true;
 		int index = 0;
 		for(Contact c:Contacts) {
-				if(c.getPhoneNumber() == phNo) {
+				if(c.getPhoneNumber().equals(phNo)) {
 					Contacts.set(index, a);
 					flag = false;
 					break;
@@ -51,7 +51,7 @@ public class PhoneBook {
 	public void deleteContact(String phNo) {
 		boolean flag = true;
 		for(Contact c:Contacts) {
-			if(c.getPhoneNumber() == phNo) {
+			if(c.getPhoneNumber().equals(phNo)) {
 				Contacts.remove(c);
 				flag = false;
 				break;

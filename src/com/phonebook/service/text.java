@@ -26,48 +26,48 @@ public class text {
 			switch(choice) {
 			case 1:
 				System.out.println("Enter Contact name:");
-				String phName = sc.nextLine();
-				sc.next();
+				String phName = sc.next();
+				sc.nextLine();
 				
 				System.out.println("Enter Phone Number:");
-				String phNo = sc.nextLine();
-				sc.next();
+				String phNo = sc.next();
+				sc.nextLine();
 				
 				System.out.println("Enter Address:");
-				String phAdd = sc.nextLine();
-				sc.next();
+				String phAdd = sc.next();
+				sc.nextLine();
 				
 				System.out.println("Enter Contact Type:");
-				String phCType = sc.nextLine();
-				sc.next();
+				String phCType = sc.next();
+				sc.nextLine();
 				
 				phb.addContact(new Contact(phName,phNo,phAdd,phCType));
 				System.out.println("Contact Added Successfully!");
 				break;
 			case 2:
 				System.out.println("Enter Contact name:");
-				String phName1 = sc.nextLine();
-				sc.next();
+				String phName1 = sc.next();
+				sc.nextLine();
 				
 				phb.searchContact(phName1);				
 				break;
 			case 3:
 				
 				System.out.println("Enter Phone Number:");
-				String phNo2 = sc.nextLine();
-				sc.next();
+				String phNo2 = sc.next();
+				sc.nextLine();
 				
 				System.out.println("Enter Contact name:");
-				String phName2 = sc.nextLine();
-				sc.next();
+				String phName2 = sc.next();
+				sc.nextLine();
 				
 				System.out.println("Enter Address:");
-				String phAdd2 = sc.nextLine();
-				sc.next();
+				String phAdd2 = sc.next();
+				sc.nextLine();
 				
 				System.out.println("Enter Contact Type:");
-				String phCType2 = sc.nextLine();
-				sc.next();
+				String phCType2 = sc.next();
+				sc.nextLine();
 				
 				
 				Contact updatedContact = new Contact(phName2,phNo2,phAdd2,phCType2);
@@ -77,8 +77,9 @@ public class text {
 				break;
 			case 4:
 				System.out.println("Enter Phone number to delete:");
-				String phNo3 = sc.nextLine();
-				sc.next();
+				String phNo3 = sc.next();
+				sc.nextLine();
+				
 				phb.deleteContact(phNo3);
 				break;
 			case 5:
