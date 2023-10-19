@@ -1,6 +1,6 @@
 FROM openjdk
 
-MAINTAINER 201597
+MAINTAINER manu
 
 WORKDIR /app
 
