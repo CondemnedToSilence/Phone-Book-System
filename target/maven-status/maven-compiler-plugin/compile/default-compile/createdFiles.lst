@@ -1,0 +1,3 @@
+com\phonebook\model\Contact.class
+com\phonebook\service\text.class
+com\phonebook\model\PhoneBook.class
