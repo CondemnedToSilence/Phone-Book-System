@@ -24,7 +24,7 @@
             <configuration>  
                 <archive>  
                     <manifest>  
-                        <mainClass>com.training.service.TestPhoneBook</mainClass>  
+                        <mainClass>com.phonebook.service.text</mainClass>  
                     </manifest>  
                 </archive>  
             </configuration>  
